@@ -1,6 +1,7 @@
 //Acá vamos importando los componentes que vayamos creando en componentes -> public
 import logo from './logo.svg';
 import './App.css';
+import {Switch, Route} from "react-router-dom";
 import Footer from './components/public/Footer';
 import Navbar from './components/public/Navbar';
 import Main from './components/public/Main';

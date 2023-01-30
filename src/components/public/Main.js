@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import RickAndMortyService from '../../services/RickAndMorty.service';
+
 import Cards from './Cards';
 
 export class Main extends Component { //Componente de clase
@@ -18,9 +18,7 @@ export class Main extends Component { //Componente de clase
     }
 
     componentDidMount() {
-        RickAndMortyService.getAllCharacters()
-            .then((data) => this.setState({ mascotas: data.results }))
-            .catch((error) => console.log(error));
+
     }
     /*
     Linea 44:
@@ -42,7 +40,7 @@ export class Main extends Component { //Componente de clase
                         </div>
                     </div>
                 </section>
-                <Cards mascotas={this.state.mascotas} />
+                <Cards />
             </main>
         )
     }
