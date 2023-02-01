@@ -6,6 +6,14 @@
 
 2. Class components
 
+3. useState
+
+4. useEffect
+
+5. Hooks personalizados
+
+6. Uso de la librería react-router-dom
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
