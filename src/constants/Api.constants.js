@@ -1,4 +1,5 @@
-/**
+/** 
+ * * A P I  D E  R I C K  A N D  M O R T Y
  * * Constante que se encarga de comunicarse con el api de rick and morty
  */
 export const API_RM = { //? Objeto
