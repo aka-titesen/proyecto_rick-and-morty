@@ -3,6 +3,7 @@ Creamos un componente funcional para el footer de la aplicación,
 y lo importaremos en app.js
 */
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 //Retorna una porción de código del componente footer
 //Los componentes de react se manejan bajo el archivo jsx
 const Footer = () => { //Funcional componenet
@@ -29,14 +30,17 @@ const Footer = () => { //Funcional componenet
                 <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
                     <p class="col-md-4 mb-0 text-muted">&copy; {year} {companyName}</p>
 
-
-                    <ul class="nav col-md-4 justify-content-end">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-                    </ul>
+                    <Link
+                        to={"/"}
+                        className="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none"
+                    >
+                        <img id='chiquito'
+                            className="App-logo"
+                            height="52"
+                            src="dog.png"
+                            alt="perro-giratorio"
+                        />
+                    </Link>
                 </footer>
             </div>
         </div>
